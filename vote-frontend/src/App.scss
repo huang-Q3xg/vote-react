@@ -1,0 +1,66 @@
+body {
+  font-size: 0.28rem !important;
+
+  #root {
+    min-height: 100vh;
+
+    .app-footer {
+      position: fixed;
+      padding: 0 !important;
+      width: 100vw !important;
+      text-align: center;
+
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+
+      bottom: 0;
+
+      .footer-user-info {
+        background-color: #f3f4f7;
+        margin-bottom: .05rem;
+        height: .8rem;
+        line-height: .8rem;
+      }
+    }
+
+    
+  }
+}
+
+
+.footer-link-wrp {
+  padding: 0 1.2rem;
+  
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  img {
+    width: 80%;
+  }
+
+  .home, .my-votes {
+    & :first-child {
+      display: none;
+    }
+  } 
+  .my-votes :first-child {
+    display: none;
+  }
+  .cur-page-link {
+    & :first-child {
+      display: inline;
+    }
+    & :nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+// 样式覆盖
+.ant-layout, .ant-layout-footer {
+  background-color: #fff !important;
+}

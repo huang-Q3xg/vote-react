@@ -1,0 +1,55 @@
+
+.crete-vote-wrp {
+  min-height: 100vh;
+  background-color: #f3f4f7;
+  & + .app-footer {
+    display: none !important;
+  }
+  .icon-back-wrp {
+    padding: .3rem .3rem .8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    height: .28rem;
+    line-height: .28rem;
+    background-color: #fff;
+
+    .iconfont.back {
+      display: block;
+      width: .22rem;
+      height: .22rem;
+      margin-right: .10rem;
+      
+      border: .02rem solid #000;
+      border-right: none; border-bottom: none;
+      transform: rotate(-45deg);
+      & + span {
+        font-weight: bolder;
+      }
+    }
+  }
+  .create-vote {
+    background-color: #fff !important;
+    .option-input {
+      font-size: .28rem !important;
+    }
+  
+    .add-option {
+      .ant-form-item {
+        margin-bottom: .1rem !important;
+        font-size: .28rem !important;
+      }
+    }
+    .deadlineInput .ant-picker-suffix {
+      display: none
+    }
+  }
+  .submit-btn {
+    background-color: #f3f4f7;
+    text-align: center;
+  }
+}
+
+#basic_deadline {
+  color: #c5bfcd
+}

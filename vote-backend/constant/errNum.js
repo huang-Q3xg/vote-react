@@ -1,0 +1,5 @@
+module.exports = {
+  UNAUTHORIZED : 1001,
+  REGISTERFAILED: 1002,
+  NOTFOUND: 1010,
+}
