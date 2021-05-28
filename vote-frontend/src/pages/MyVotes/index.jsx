@@ -19,8 +19,8 @@ export default function MyVotes() {
   const [count, setCount] = useState(10)
   const hdVoteLink = useVoteLink()
 
-  function loadMore({ startIndex, stopIndex }) {
-    return axios.get(`/vote/mine?startIdx=${startIndex}&stopIdx=${stopIndex}`).then(res => {
+  function loadMore({ startIndex, stopIndex }) { /* loadMore need return a Promise entity */
+    return axios.get(`/vote/mine?startIdx=${startIndex}&stopIdx=${stopIndex+1}`).then(res => {
       setCount(res.data.count)//里面有总条目数
       votes.splice(startIndex, 0, ...res.data.votes)
       setVotes([...votes])

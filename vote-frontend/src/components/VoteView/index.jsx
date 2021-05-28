@@ -113,7 +113,7 @@ export default function VoteView() {
                       strokeLinecap="square" showInfo={false} trailColor="rgba(0,0,0,0)" strokeColor="#256df2" strokeWidth="0.02rem" />
                   </div>
                   {
-                    !voteInfo.anonymous && userInfo.avatar &&
+                    !voteInfo.anonymous &&
                     <div>
                       {option.users.map((user, idx) => {
                         return <Avatar
